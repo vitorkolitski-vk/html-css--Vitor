@@ -1,115 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dicas para Eletricistas</title>
+
+<title>Portal do Eletricista</title>
 
 <style>
-*{margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#f4f4f4;
-color:#333;
+    background:#f4f4f4;
+    color:#333;
 }
+
+/* CABEÇALHO */
 
 header{
-background:#0d47a1;
-color:white;
-padding:25px;
-text-align:center;
+    background:#0d47a1;
+    color:white;
+    padding:25px;
+    text-align:center;
 }
 
+header h1{
+    margin-bottom:10px;
+}
+
+/* MENU */
+
 nav{
-background:#1565c0;
-padding:15px;
-text-align:center;
+    background:#1565c0;
+    padding:15px;
+    text-align:center;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+    transition:.3s;
 }
 
 nav a:hover{
-color:yellow;
+    color:yellow;
 }
+
+/* BANNER */
 
 .banner{
-background:#1976d2;
-color:white;
-padding:60px;
-text-align:center;
+    background:#1976d2;
+    color:white;
+    padding:60px 20px;
+    text-align:center;
 }
 
+.banner h1{
+    margin-bottom:15px;
+}
+
+/* SEÇÕES */
+
 section{
-padding:40px;
+    padding:40px 20px;
+    max-width:1200px;
+    margin:auto;
 }
 
 h2{
-margin-bottom:20px;
-color:#0d47a1;
+    margin-bottom:20px;
+    color:#0d47a1;
+    text-align:center;
 }
 
+/* CARDS */
+
 .cards{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
 }
 
 .card{
-background:white;
-width:300px;
-border-radius:10px;
-box-shadow:0px 0px 10px rgba(0,0,0,.2);
-overflow:hidden;
-transition:.3s;
+    background:white;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,.2);
+    overflow:hidden;
+    transition:.3s;
 }
 
 .card:hover{
-transform:scale(1.03);
+    transform:translateY(-8px);
+    box-shadow:0px 8px 20px rgba(0,0,0,.3);
 }
 
 .card img{
-width:100%;
-height:200px;
-object-fit:cover;
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    display:block;
 }
 
 .card h3{
-padding:15px;
-color:#1565c0;
+    padding:15px;
+    color:#1565c0;
 }
 
 .card p{
-padding:15px;
-text-align:justify;
+    padding:0 15px 20px;
+    text-align:justify;
+    line-height:1.5;
 }
 
-footer{
-background:#0d47a1;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
-}
+/* LISTA */
 
 ul{
-margin-left:25px;
-line-height:30px;
+    max-width:700px;
+    margin:auto;
+    line-height:30px;
+    background:white;
+    padding:25px 40px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,.15);
 }
 
- </style>
+/* RODAPÉ */
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+/* CELULAR */
+
+@media(max-width:600px){
+
+    nav a{
+        display:block;
+        margin:10px;
+    }
+
+    .banner{
+        padding:40px 15px;
+    }
+
+    section{
+        padding:30px 15px;
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+
+}
+
+</style>
 
 </head>
+
 <body>
+
+
+<!-- CABEÇALHO -->
 
 <header>
 
@@ -119,66 +189,95 @@ line-height:30px;
 
 </header>
 
+
+<!-- MENU -->
+
 <nav>
 
 <a href="#ferramentas">Ferramentas</a>
 
-<a href="#produtos">Produtos</a>
+<a href="#produtos">Disjuntores</a>
 
 <a href="#tomadas">Tomadas</a>
+
+<a href="#materiais">Materiais</a>
 
 <a href="#dicas">Dicas</a>
 
 </nav>
 
+
+<!-- BANNER -->
+
 <div class="banner">
 
-<h1>Bem-vindo ao Portal do Eletricista</h1>
-
-<p>Aprenda sobre equipamentos, instalações elétricas e segurança.</p>
-
-</div>
-
-<section id="ferramentas">
-
-<h2>Ferramentas Utilizadas</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="alicate.jpg">
-
-<h3>Alicate Universal</h3>
+<h1>Bem-vindo ao Portal do Eletricista ⚡</h1>
 
 <p>
-Ferramenta utilizada para cortar fios, apertar conexões e realizar diversos serviços elétricos.
-É indispensável para qualquer eletricista.
+Aprenda sobre equipamentos, instalações elétricas e segurança.
 </p>
 
 </div>
 
+
+<!-- FERRAMENTAS -->
+
+<section id="ferramentas">
+
+<h2>🔧 Ferramentas Utilizadas</h2>
+
+<div class="cards">
+
+
+<!-- ALICATE -->
+
 <div class="card">
 
-<img src="images/chave_teste.jpg">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Basic%20NeedleNose%20Pliers.jpg"
+alt="Alicate">
+
+<h3>Alicate</h3>
+
+<p>
+O alicate é uma ferramenta muito utilizada em trabalhos elétricos.
+Pode auxiliar no manuseio e corte de fios e cabos, conforme o tipo de alicate.
+</p>
+
+</div>
+
+
+<!-- CHAVE DE TESTE -->
+
+<div class="card">
+
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Screwdriver%20test%20light%20wiha%20255-11.JPG"
+alt="Chave de teste">
 
 <h3>Chave de Teste</h3>
 
 <p>
-Serve para identificar se existe tensão elétrica em fios, tomadas e interruptores.
-É muito importante para trabalhar com segurança.
+A chave de teste é utilizada para verificar a presença de tensão.
+Seu uso deve seguir procedimentos adequados de segurança.
 </p>
 
 </div>
 
+
+<!-- MULTÍMETRO -->
+
 <div class="card">
 
-<img src="images/multimetro.jpg">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/All%20multimeters.jpg"
+alt="Multímetros digitais">
 
 <h3>Multímetro Digital</h3>
 
 <p>
-Equipamento usado para medir tensão, corrente, resistência e continuidade dos circuitos elétricos.
+Equipamento utilizado para realizar diferentes medições elétricas,
+como tensão, corrente, resistência e continuidade.
 </p>
 
 </div>
@@ -187,45 +286,65 @@ Equipamento usado para medir tensão, corrente, resistência e continuidade dos 
 
 </section>
 
+
+<!-- DISJUNTORES -->
+
 <section id="produtos">
 
-<h2>Disjuntores</h2>
+<h2>⚡ Disjuntores</h2>
 
 <div class="cards">
 
+
+<!-- MONOPOLAR -->
+
 <div class="card">
 
-<img src="images/disjuntor1.jpg">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Circuit%20Breaker.png"
+alt="Disjuntor">
 
 <h3>Disjuntor Monopolar</h3>
 
 <p>
-Utilizado em circuitos de iluminação e tomadas simples.
-Protege contra sobrecarga e curto-circuito.
+Dispositivo de proteção utilizado em circuitos elétricos.
+Sua especificação deve ser adequada ao circuito e à instalação.
 </p>
 
 </div>
 
+
+<!-- BIPOLAR -->
+
 <div class="card">
 
-<img src="images/disjuntor2.jpg">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Circuit%20Breaker.png"
+alt="Disjuntor bipolar">
 
 <h3>Disjuntor Bipolar</h3>
 
 <p>
-Muito utilizado em chuveiros elétricos e equipamentos de maior potência.
+Possui dois polos e é utilizado em determinados circuitos que necessitam
+da interrupção simultânea dos condutores ativos.
 </p>
 
 </div>
 
+
+<!-- TRIPOLAR -->
+
 <div class="card">
 
-<img src="images/disjuntor3.jpg">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Circuit%20Breaker.png"
+alt="Disjuntor tripolar">
 
 <h3>Disjuntor Tripolar</h3>
 
 <p>
-Ideal para motores elétricos e instalações trifásicas industriais.
+Possui três polos e pode ser utilizado em circuitos trifásicos,
+quando especificado corretamente para a instalação.
 </p>
 
 </div>
@@ -234,44 +353,65 @@ Ideal para motores elétricos e instalações trifásicas industriais.
 
 </section>
 
+
+<!-- TOMADAS -->
+
 <section id="tomadas">
 
-<h2>Tipos de Tomadas</h2>
+<h2>🔌 Tipos de Tomadas</h2>
 
 <div class="cards">
 
+
+<!-- TOMADA 10A -->
+
 <div class="card">
 
-<img src="images/tomada10.jpg">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/NBR%2014136%20plugs%20and%20outlet.jpg"
+alt="Tomada padrão brasileiro">
 
 <h3>Tomada 10A</h3>
 
 <p>
-Indicada para aparelhos de menor potência como televisão, computador e carregadores.
+A tomada de 10 A é utilizada para equipamentos compatíveis com essa
+especificação. A corrente nominal deve ser respeitada.
 </p>
 
 </div>
 
+
+<!-- TOMADA 20A -->
+
 <div class="card">
 
-<img src="images/tomada20.jpg">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/NBR%2014136%20plugs%20and%20outlet.jpg"
+alt="Tomada elétrica">
 
 <h3>Tomada 20A</h3>
 
 <p>
-Utilizada em equipamentos de maior consumo como micro-ondas, forno elétrico e ar-condicionado.
+Tomadas de 20 A são destinadas a equipamentos compatíveis com essa
+corrente nominal e devem possuir circuito adequado.
 </p>
 
 </div>
 
+
+<!-- INTERRUPTOR -->
+
 <div class="card">
 
-<img src="images/interruptor.jpg">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Electrical%20outlet.png"
+alt="Instalação elétrica">
 
 <h3>Interruptor</h3>
 
 <p>
-Controla o acionamento da iluminação e pode existir em vários modelos e configurações.
+O interruptor é utilizado para controlar o acionamento de circuitos de
+iluminação.
 </p>
 
 </div>
@@ -280,45 +420,66 @@ Controla o acionamento da iluminação e pode existir em vários modelos e confi
 
 </section>
 
-<section>
 
-<h2>Produtos Importantes</h2>
+<!-- MATERIAIS -->
+
+<section id="materiais">
+
+<h2>🧰 Produtos Importantes</h2>
 
 <div class="cards">
 
+
+<!-- CABOS -->
+
 <div class="card">
 
-<img src="images/fio.jpg">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Yakinelektrikci.png"
+alt="Ferramentas e materiais elétricos">
 
 <h3>Cabos Elétricos</h3>
 
 <p>
-Existem diversos tipos e espessuras.
-A escolha depende da corrente elétrica e do equipamento instalado.
+Existem diversos tipos e seções de cabos.
+A escolha deve considerar as características do circuito e da instalação.
 </p>
 
 </div>
 
+
+<!-- QUADRO -->
+
 <div class="card">
 
-<img src="images/quadro.jpg">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Old%20style%20residual%20current%20device.jpg"
+alt="Quadro elétrico">
 
 <h3>Quadro de Distribuição</h3>
 
 <p>
-Local onde ficam instalados os disjuntores responsáveis pela proteção da instalação elétrica.
+É o local onde ficam dispositivos de proteção e distribuição dos
+circuitos elétricos de uma instalação.
 </p>
 
 </div>
 
+
+<!-- DR -->
+
 <div class="card">
 
-<img src="images/dr.jpg">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Residual%20current%20device%20%28RCD%29.jpg"
+alt="Dispositivo DR">
 
 <h3>Dispositivo DR</h3>
 
 <p>
-Protege as pessoas contra choques elétricos desligando automaticamente o circuito quando detecta fuga de corrente.
+O dispositivo DR ajuda a proteger as pessoas contra determinados
+riscos associados a correntes de fuga, interrompendo o circuito quando
+detecta uma condição de atuação.
 </p>
 
 </div>
@@ -327,39 +488,53 @@ Protege as pessoas contra choques elétricos desligando automaticamente o circui
 
 </section>
 
+
+<!-- SEGURANÇA -->
+
 <section id="dicas">
 
-<h2>Dicas de Segurança</h2>
+<h2>🛡️ Dicas de Segurança</h2>
 
 <ul>
 
-<li>Desligue sempre o disjuntor antes de iniciar qualquer serviço.</li>
+<li>Desligue a alimentação antes de realizar serviços elétricos.</li>
 
-<li>Utilize Equipamentos de Proteção Individual (EPI).</li>
+<li>Utilize equipamentos de proteção adequados.</li>
 
 <li>Nunca trabalhe com as mãos molhadas.</li>
 
-<li>Use ferramentas com isolamento elétrico.</li>
+<li>Utilize ferramentas apropriadas e em boas condições.</li>
 
-<li>Verifique a tensão antes de tocar nos fios.</li>
+<li>Verifique a ausência de tensão utilizando equipamento adequado.</li>
 
-<li>Utilize cabos certificados.</li>
+<li>Utilize materiais elétricos certificados.</li>
 
-<li>Respeite as normas da NBR 5410.</li>
+<li>Respeite as normas técnicas aplicáveis.</li>
 
-<li>Faça inspeções periódicas nas instalações.</li>
+<li>Em serviços que envolvam risco elétrico, procure um profissional qualificado.</li>
 
 </ul>
 
 </section>
 
+
+<!-- RODAPÉ -->
+
 <footer>
 
-<h3>Portal do Eletricista</h3>
+<h3>Portal do Eletricista ⚡</h3>
 
-<p>Site educativo sobre instalações elétricas, ferramentas e segurança.</p>
+<p>
+Site educativo sobre instalações elétricas, ferramentas e segurança.
+</p>
+
+<p>
+© 2026 Portal do Eletricista
+</p>
 
 </footer>
 
+
 </body>
+
 </html>
